@@ -34,7 +34,8 @@ The dataset was cleaned using Google Sheets to ensure consistency and remove any
 The cleaned dataset was subjected to various data analysis techniques to extract insights related to access to drinking water. The analysis included:
 
 + Descriptive statistics to summarize key metrics such as population served, access levels, and disparities.
-![Access to Drinking Water Services](year-distribution.png)
+![image](https://github.com/Dianjennifer/Access-to-Drinking-Water-Services/assets/127655054/3c4eeb65-aac4-46da-a0a4-c49e0377c42f)
+
 
 + Visualization techniques such as charts and graphs to illustrate trends and patterns in the data.
 + Comparative analysis to identify differences in access levels among different countries and regions.
