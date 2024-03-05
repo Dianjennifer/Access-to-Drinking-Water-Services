@@ -84,6 +84,6 @@ FROM
 ```
 
 + Visualization techniques such as charts and graphs to illustrate trends and patterns in the data.
-![image](https://github.com/Dianjennifer/Access-to-Drinking-Water-Services/wiki/Dashboard:-Access-to-Drinking-Water)
+![image](https://github.com/Dianjennifer/Access-to-Drinking-Water-Services/assets/127655054/b25f5ba2-92f4-4574-857d-e76dce66ab54)
   
 + Correlation analysis to explore relationships between access to drinking water and various socio-economic factors
