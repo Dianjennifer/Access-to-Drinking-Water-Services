@@ -7,9 +7,8 @@ This project investigates access to safe and affordable drinking water, focusing
 2. [Data Source](#data-source)
 3. [Data Preparation and Cleaning](#data-preparation-and-cleaning)
 4. [Data Analysis](#data-analysis)
-5. [How to Use](#how-to-use)
-6. [License](#license)
-7. [Credits](#credits)
+5. [Key Insights](#key-insights)
+6. [Recommendations](#recommendations)
 
 ## Project Overview
 ### United Nations SDGs Overview
@@ -34,9 +33,11 @@ The dataset was cleaned using Google Sheets to ensure consistency and remove any
 The cleaned dataset was subjected to various data analysis techniques to extract insights related to access to drinking water. The analysis included:
 
 + Descriptive statistics to summarize key metrics such as population served, access levels, and disparities.
+  Tool used: Google Sheets
 ![image](https://github.com/Dianjennifer/Access-to-Drinking-Water-Services/assets/127655054/3c4eeb65-aac4-46da-a0a4-c49e0377c42f)
 
 + Comparative analysis to identify differences in access levels among different countries and regions.
+  Tool used: SQL
 ```sql
 SELECT * FROM `sql-project-416009.use_of_water.Estimate of the use of water` ;
 
@@ -44,13 +45,6 @@ SELECT * FROM `sql-project-416009.use_of_water.Estimate of the use of water` ;
 SELECT *, 
     ((pop_n-pop_u/pop_n)*100) AS pop_r
 FROM `sql-project-416009.use_of_water.Estimate of the use of water`;
-
---Analysis of Urban vs Rural Population Growth
-SElECT
-   year
-   SUM(pop_u) AS urban_population
-   SUM(pop_r) AS rural_population
-FROM Es
 
 -- country with the highest national population in 2020
 SELECT 
@@ -84,6 +78,18 @@ FROM
 ```
 
 + Visualization techniques such as charts and graphs to illustrate trends and patterns in the data.
+  Tool used for Visualization: Tableau
 ![image](https://github.com/Dianjennifer/Access-to-Drinking-Water-Services/assets/127655054/b25f5ba2-92f4-4574-857d-e76dce66ab54)
   
-+ Correlation analysis to explore relationships between access to drinking water and various socio-economic factors
+## Key Insights
+* Disparities between Urban and Rural Access: The analysis reveals disparities in access to basic water services between urban and rural areas, with some countries exhibiting higher access levels in rural regions. Understanding such disparities is crucial for designing equitable interventions and policies.
+
+* Global Population Trends: SQL queries identified countries with the highest national populations and assessed urban versus rural population growth over time. These insights aid in understanding demographic shifts and their implications for water resource management and service provision.
+
+* Improvements in Water Access: By assessing changes in water access between 2015 and subsequent years, the analysis highlights countries where improvements in access have occurred, stagnated, or declined. This information is vital for monitoring progress towards SDG 6 targets and identifying areas requiring additional support.
+
+## Recommendations
+* Investment in Infrastructure: Allocate resources towards improving water infrastructure, particularly in underserved rural areas where access to safe drinking water is limited. This could involve building or upgrading water treatment plants, distribution networks, and storage facilities.
+* Targeted Interventions for Vulnerable Groups: Implement targeted programs to address the specific needs of vulnerable groups such as women, children, and marginalized communities who may face greater barriers to accessing safe drinking water. This could involve providing subsidies for water services or implementing special outreach programs.
+
+
